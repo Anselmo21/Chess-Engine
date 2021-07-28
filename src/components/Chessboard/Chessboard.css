@@ -1,0 +1,21 @@
+#chessboard { 
+    /* Lay each item in a grid format  */
+    display: grid; 
+
+    /* By default, each item will be layed vertically  */
+    /* In the grid, make 8 columns each 100 px big and do the same for rows */
+    grid-template-columns: repeat(8,100px);
+    grid-template-rows: repeat(8,100px);
+ 
+    width: 800px;
+    height: 800px;
+    background-color: blue;
+}
+
+.sign { 
+
+    width: 200px;
+    height: 400px;
+    background-color: maroon;
+}
+

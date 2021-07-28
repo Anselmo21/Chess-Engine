@@ -1,0 +1,46 @@
+.tile { 
+    /* 8x8 grid so each tile is 100px by 100px */
+
+    display: grid; 
+    place-content: center;
+    width: 100px;
+
+    height: 100px; 
+}
+
+
+/* Modify Chess Pieces as a background image */
+.tile .chess-piece { 
+    width: 100px; 
+    height: 100px; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 80px;
+}
+
+/* Allow piece to be hovered with grab feature .chess-piece*/
+.chess-piece[title]:hover { 
+    cursor:grab;
+    background-color: rgb(255, 251, 0);
+}
+
+/* Allow piece to be grabbed upon being hovered */
+.chess-piece[title]:active { 
+    cursor:grabbing;
+    background-color: green;
+ }
+
+ .highlighted-tile { 
+    background-color: royalblue; 
+}
+
+/* Color them red */
+.coloured-tile { 
+    background-color: #cc0000;
+}
+
+/* Make Tile white */
+.white-tile {
+    background-color: white;
+}
+
